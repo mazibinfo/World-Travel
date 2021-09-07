@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+ul li{
+    list-style: none;
+}
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+p, li{
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+    /* letter-spacing: 0.15em; */
+}
+h1, h2, h3{
+    margin-bottom: .5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+/* ##################  Utility Classes  ################ */
+.container{
+    max-width: 960px;
+    width: 95%;
+    margin: 0 auto;
+}
+.lg-header{
+    font-weight: 700;
+}
+.md-header{
+    font-weight: 500;
+}
+.text-white{
+    color:white;
+}
+.text-black{
+    color: black;
+}
+.text-red{
+    color: red;
+}
+.bg-dark{
+    background-color: rgba(22, 21, 21, 0.993);
+}
+.btn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+}
+.btn-primary{
+    background-color: white;
+    border-radius: 10em;
+}
+.btn-primary:hover{
+    background-color: rgb(170, 166, 165);
+}
+/* ########################## Header Styling ################### */
+.header{
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5) ), url(https://source.unsplash.com/1600x900/?wild);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    padding-top: 1rem;
+}
+.navbar .logo{
+    float: left;
+    color: white;
+    font-size: 3rem;
+}
+.navbar .nav-items{
+    float: right;
+}
+.navbar .nav-items .nav-item{
+    display: inline-block;
+    padding: 1rem;
+}
+nav::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.nav-item a{
+    color: white;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+/* ####################### Header Container styling ############ */
+
+.header-container p{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.header-container{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)); */
+}
+/* ###########################  Showcar Styling  ######################## */
+.showcase{
+    padding: 5rem 0;
+    background: #ddd;
+}
+.showcase .box{
+    box-shadow: 5px 10px 18px #888888;
+    height: 300px;
+    background: #fff;
+    overflow: auto;
+}
+.box1{
+    margin-bottom: 5rem;
+}
+.box1 .text-box,
+.box2 .img-box{
+    float: left;
+    width: 50%;
+}
+.box1 .img-box,
+.box2 .text-box{
+    float: right;
+    width: 50%;
+}
+.img-box{
+    height: 100%;
+}
+.text-box{
+    padding: 3rem;
+    /* padding-top: 6rem; */
+}
+.text-box a{
+    border: 1px solid red;
+}
+.box .text-box h2{
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    padding: .5em 0;
+    font-size: 2rem;
+}
+.text-box p{
+    margin-bottom: .5em;
+}
+.box .text-box{
+    height: 100%;
+}
+.box .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ########################### Features Styling ################## */
+.features{
+    background: #fff;
+    padding: 5rem 0;
+}
+.features .box-wrapper{
+    overflow: hidden;
+    box-shadow: 5px 10px 18px #888888;
+}
+.box-wrapper .box{
+    text-align: center;
+    padding: 2rem 2.5rem;
+
+}
+.box h2{
+    font-size: 2rem;
+}
+.features .box-wrapper .box-1{
+    float: left;
+    background-color: rgba(22, 21, 21, 0.993);
+    color: white;
+    width: 33%;
+}
+.features .box-wrapper .box-2{
+    float: left;
+    background-color: rgba(85, 1, 1, 0.993);
+    color: white;
+    width: 34%;
+    
+}
+.features .box-wrapper .box-3{
+    float: right;
+    background-color: rgba(22, 21, 21, 0.993);
+    color: white;
+    width: 33%;
+}
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* ######################## Footer Styling ################## */
+.footer{
+    background-color: rgba(22, 21, 21, 0.993);
+    text-align: center;
+    padding: 1em;    
+}
+.footer i{
+    padding: .25em;
+}
+/* ############################----About styling-----##########################  */
+.about{
+    padding: 5em;
+}
+.about-wraper{
+    text-align: center;
+    padding: .5em 0;
+    margin-top: 2rem;
+}
+.about-heading::after{
+    content:'';
+    border: 3px solid red;
+    width: 100%;
+    display: block;
+}
+.size{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.about-wraper .left{
+    float: left;
+    width: 50%;
+}
+.about-wraper .right{
+    float: right;
+    width: 50%;
+}
+.about-wraper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.about-wraper li::before{
+    content: '\2713';
+    color: red;
+    margin-right: .5em;
+    font-weight: 700;
+}
+/* #################### -----Counts styling----- ################## */
+.counts{
+    margin-top: 2rem;
+}
+.counts .count-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.count-item span{
+    font-size: 3rem;
+    font-weight: 700;
+    color: red;
+}
+.counts p{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+/* ###################---------Banner Styling-----------############ */
+.banner{
+    background-color: rgb(219, 67, 92);
+    margin-top: 2rem;
+    box-shadow: 5px 10px 18px #888888;
+}
+.banner .banner-left{
+    float: left;
+}
+.banner .banner-right{
+    border: 3px solid white;
+    float: right;
+    margin: .5em .5em;
+}
+.banner::after{
+    content:'';
+    display: block;
+    clear:both;
+}
+.banner p{
+    padding: .5em 0;
+    margin-left: 2em;
+    margin-top: .5em;
+    font-weight: 500;
+    color:white;
+}
+.btn-banner{
+    display: inline-block;
+    text-transform: uppercase;
+    color:white;
+    padding: .5em 3rem;
+    font-weight: 700;
+    letter-spacing: .15em;
+}
+/* ############ ------------ CONTACT Styling ----------- ########## */
+.contact-form{
+    padding: 5rem;
+    background: #ddd;
+}
+.contact-wraper .contact{
+    height: 500px;
+    padding: 1rem;
+    float: left;
+    width: 49%;
+    background-color: #fff;
+    overflow: auto;
+}
+.contact-wraper .form{
+    height: 500px;
+    padding: 1rem;
+    float: right;
+    width: 49%;
+    background-color:#fff;
+    overflow: auto;
+}
+.contact-wraper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.image img{
+    width: 95%;
+}
+.contact h2{
+    font-size: 2rem;
+}
+.contact .location{
+    margin-bottom: 2.5rem;
+}
+.contact .email{
+    margin-bottom: 2.5rem;
+}
+.contact .call{
+    margin-bottom: 2.5rem;
+}
+.form label, input, textarea{
+    display: block;
+    width: 98%;
+}
+.form input, textarea{
+    /* width: 100%; */
+    margin-bottom: .6em;
+
+}
+.form label{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.form h2{
+    font-size: 2rem;
+    padding-bottom: .5rem;
+    border-bottom: 4px solid red;
+}
+.form .submit{
+    width: 30%;
+    padding: .8em;
+    text-transform: uppercase;
+    background-color: rgb(219, 67, 92);
+    color: white;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    font-weight: 500;
+}
