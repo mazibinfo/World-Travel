@@ -115,7 +115,7 @@ nav::after{
     transform: translate(-50%, -50%);
     /* background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)); */
 }
-/* ###########################  Showcar Styling  ######################## */
+/* ###########################  Showcase Styling  ######################## */
 .showcase{
     padding: 5rem 0;
     background: #ddd;
@@ -124,7 +124,6 @@ nav::after{
     box-shadow: 5px 10px 18px #888888;
     height: 300px;
     background: #fff;
-    overflow: auto;
 }
 .box1{
     margin-bottom: 5rem;
@@ -178,7 +177,6 @@ nav::after{
     padding: 5rem 0;
 }
 .features .box-wrapper{
-    overflow: hidden;
     box-shadow: 5px 10px 18px #888888;
 }
 .box-wrapper .box{
@@ -193,20 +191,20 @@ nav::after{
     float: left;
     background-color: rgba(22, 21, 21, 0.993);
     color: white;
-    width: 33%;
+    width: 33.33%;
 }
 .features .box-wrapper .box-2{
     float: left;
     background-color: rgba(85, 1, 1, 0.993);
     color: white;
-    width: 34%;
+    width: 33.33%;
     
 }
 .features .box-wrapper .box-3{
     float: right;
     background-color: rgba(22, 21, 21, 0.993);
     color: white;
-    width: 33%;
+    width: 33.33%;
 }
 .box-wrapper::after{
     content: "";
@@ -217,7 +215,8 @@ nav::after{
 .footer{
     background-color: rgba(22, 21, 21, 0.993);
     text-align: center;
-    padding: 1em;    
+    padding: 1em;
+    width: 100%;
 }
 .footer i{
     padding: .25em;
@@ -285,58 +284,55 @@ nav::after{
 }
 /* ###################---------Banner Styling-----------############ */
 .banner{
-    background-color: rgb(219, 67, 92);
-    margin-top: 2rem;
+    background: rgb(219, 67, 92);
+    padding: 1.5rem;
     box-shadow: 5px 10px 18px #888888;
 }
-.banner .banner-left{
+.banner-left{
     float: left;
-}
-.banner .banner-right{
-    border: 3px solid white;
-    float: right;
-    margin: .5em .5em;
-}
-.banner::after{
-    content:'';
-    display: block;
-    clear:both;
-}
-.banner p{
-    padding: .5em 0;
-    margin-left: 2em;
-    margin-top: .5em;
+    width: 60%;
+    color: white;
+    /* padding-left: 3rem; */
+    margin-top: 1.5px;
     font-weight: 500;
-    color:white;
+}
+.banner-right{
+    float: right;
+    width: 40%;
+    margin-top: 2.5px;
+    text-align: right;
 }
 .btn-banner{
-    display: inline-block;
-    text-transform: uppercase;
-    color:white;
-    padding: .5em 3rem;
-    font-weight: 700;
+    border: 2px solid white;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
     letter-spacing: .15em;
+    padding: .5rem 3.5rem;
+}
+.banner::after{
+    content: '';
+    display: block;
+    clear: both;
 }
 /* ############ ------------ CONTACT Styling ----------- ########## */
 .contact-form{
     padding: 5rem;
-    background: #ddd;
+    /* background: #ddd; */
 }
 .contact-wraper .contact{
     height: 500px;
     padding: 1rem;
     float: left;
     width: 49%;
-    background-color: #fff;
-    overflow: auto;
+    background-color: rgb(240, 240, 240);
 }
 .contact-wraper .form{
     height: 500px;
     padding: 1rem;
     float: right;
     width: 49%;
-    background-color:#fff;
-    overflow: auto;
+    background-color:rgb(240, 240, 240);
 }
 .contact-wraper::after{
     content: '';
@@ -386,4 +382,122 @@ nav::after{
     margin: 0 auto;
     cursor: pointer;
     font-weight: 500;
+}
+
+/* ######################## Media Query ######################## */
+
+@media (max-width:500px) {
+    html{
+        font-size: 50%;
+    }
+    .navbar .logo, .navbar .nav-items{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .header-container h1{
+        display: none;
+    }
+    .showcase .box{
+        height: auto;
+        width: 100%;
+    }
+    .box .img-box,
+    .box .text-box{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;     
+    }
+    .features .box-wrapper .box{
+        float: none;
+        width: 100%;
+        box-shadow: 5px 10px 18px #888888;
+    }
+    .features .box-wrapper .box-2,
+    .features .box-wrapper .box-3{
+        margin-top: 2rem;
+    }
+    .features .box-wrapper{
+        box-shadow: none;
+    }
+    .banner .banner-left,
+    .banner .banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner .banner-left{
+        padding-bottom: 1rem;
+    }
+    .contact-wraper .contact,
+    .contact-wraper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    .contact-wraper .contact{
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width:501px) and (max-width:768px) {
+    html{
+        font-size: 50%;
+    }
+    .navbar .logo, .navbar .nav-items{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .showcase .box{
+        height: auto;
+        width: 100%;
+    }
+    .box .img-box,
+    .box .text-box{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;     
+    }
+    .features .box-wrapper .box{
+        float: none;
+        width: 100%;
+        box-shadow: 5px 10px 18px #888888;
+    }
+    .features .box-wrapper .box-2,
+    .features .box-wrapper .box-3{
+        margin-top: 2rem;
+    }
+    .features .box-wrapper{
+        box-shadow: none;
+    }
+    .banner .banner-left,
+    .banner .banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner .banner-left{
+        padding-bottom: 1rem;
+    }
+    .contact-wraper .contact,
+    .contact-wraper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    .contact-wraper .contact{
+        margin-bottom: 3rem;
+    }
+}
+@media (min-width:769px) and (max-width:1200px) {
+    html{
+        font-size: 56.25%;
+    }
 }
